@@ -1,0 +1,9 @@
+export { isBigInt } from "./isBigInt";
+export { isBoolean } from "./isBoolean";
+export { isFunction } from "./isFunction";
+export { isNull } from "./isNull";
+export { isNumber } from "./isNumber";
+export { isObject } from "./isObject";
+export { isString } from "./isString";
+export { isSymbol } from "./isSymbol";
+export { isUndefined } from "./isUndefined";
