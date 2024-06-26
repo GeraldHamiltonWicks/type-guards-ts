@@ -365,12 +365,6 @@ if (isNotUndefined(value)) {
 ```
 
 
-## Future releases
-
-Absolutely! Here is the reformatted section with added clarity and a bit of "sugar":
-
----
-
 ## Future Releases
 
 Currently, this package focuses on type guards for primitive types. However, we're actively working on expanding the library to include type guards for non-primitive types. Stay tuned for future releases where you'll find new and enhanced functionalities!
