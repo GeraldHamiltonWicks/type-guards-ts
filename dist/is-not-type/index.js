@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isNotUndefined = exports.isNotSymbol = exports.isNotString = exports.isNotObject = exports.isNotNumber = exports.isNotNull = exports.isNotFunction = exports.isNotBoolean = exports.isNotBigInt = void 0;
+exports.isNotArray = exports.isNotUndefined = exports.isNotSymbol = exports.isNotString = exports.isNotObject = exports.isNotNumber = exports.isNotNull = exports.isNotFunction = exports.isNotBoolean = exports.isNotBigInt = void 0;
 var isNotBigInt_1 = require("./isNotBigInt");
 Object.defineProperty(exports, "isNotBigInt", { enumerable: true, get: function () { return isNotBigInt_1.isNotBigInt; } });
 var isNotBoolean_1 = require("./isNotBoolean");
@@ -19,3 +19,5 @@ var isNotSymbol_1 = require("./isNotSymbol");
 Object.defineProperty(exports, "isNotSymbol", { enumerable: true, get: function () { return isNotSymbol_1.isNotSymbol; } });
 var isNotUndefined_1 = require("./isNotUndefined");
 Object.defineProperty(exports, "isNotUndefined", { enumerable: true, get: function () { return isNotUndefined_1.isNotUndefined; } });
+var isNotArray_1 = require("./isNotArray");
+Object.defineProperty(exports, "isNotArray", { enumerable: true, get: function () { return isNotArray_1.isNotArray; } });

@@ -7,3 +7,4 @@ export { isObject } from "./isObject";
 export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
+export { isArray } from "./isArray";

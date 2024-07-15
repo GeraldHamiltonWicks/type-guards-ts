@@ -7,3 +7,4 @@ export { isNotObject } from "./isNotObject";
 export { isNotString } from "./isNotString";
 export { isNotSymbol } from "./isNotSymbol";
 export { isNotUndefined } from "./isNotUndefined";
+export { isNotArray } from "./isNotArray";
