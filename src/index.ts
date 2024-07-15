@@ -8,6 +8,7 @@ export {
     isString,
     isSymbol,
     isUndefined,
+    isArray
 } from "./is-type";
 
 export {
@@ -20,4 +21,5 @@ export {
     isNotString,
     isNotSymbol,
     isNotUndefined,
+    isNotArray
 } from "./is-not-type"
