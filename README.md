@@ -17,6 +17,7 @@
     - [isString](#isstring)
     - [isSymbol](#issymbol)
     - [isUndefined](#isundefined)
+    - [isArray](#isArray)
     - [isNotBigInt](#isnotbigint)
     - [isNotBoolean](#isnotboolean)
     - [isNotFunction](#isnotfunction)
@@ -26,6 +27,7 @@
     - [isNotString](#isnotstring)
     - [isNotSymbol](#isnotsymbol)
     - [isNotUndefined](#isnotundefined)
+    - [isNotArray](#isnotarray)
 - [Future Releases](#future-releases)
 
 ## Installation
@@ -64,6 +66,7 @@ if (isBoolean(value)) {
 - `isString`
 - `isSymbol`
 - `isUndefined`
+- `isArray`
 - `isNotBigInt`
 - `isNotBoolean`
 - `isNotFunction`
@@ -73,6 +76,7 @@ if (isBoolean(value)) {
 - `isNotString`
 - `isNotSymbol`
 - `isNotUndefined`
+- `isNotArray`
 
 ## How to Use Each Type Guard
 
@@ -220,6 +224,22 @@ if (isUndefined(value)) {
 }
 ```
 
+### isArray
+
+Checks if a value is an `array`.
+
+```typescript
+import { isArray } from "type-guards-ts";
+
+const value: unknown = [];
+
+if (isArray(value)) {
+    console.log("The value is an array.");
+} else {
+    console.log("The value is not array.");
+}
+```
+
 ### isNotBigInt
 
 Checks if a value is not a `BigInt`.
@@ -232,7 +252,7 @@ const value: unknown = 123;
 if (isNotBigInt(value)) {
     console.log("The value is not a BigInt.");
 } else {
-    console.log("The value is a BigInt.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -248,7 +268,7 @@ const value: unknown = "true";
 if (isNotBoolean(value)) {
     console.log("The value is not a boolean.");
 } else {
-    console.log("The value is a boolean.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -264,7 +284,7 @@ const value: unknown = "function";
 if (isNotFunction(value)) {
     console.log("The value is not a function.");
 } else {
-    console.log("The value is a function.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -280,7 +300,7 @@ const value: unknown = "not null";
 if (isNotNull(value)) {
     console.log("The value is not null.");
 } else {
-    console.log("The value is null.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -296,7 +316,7 @@ const value: unknown = "42";
 if (isNotNumber(value)) {
     console.log("The value is not a number.");
 } else {
-    console.log("The value is a number.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -312,7 +332,7 @@ const value: unknown = "object";
 if (isNotObject(value)) {
     console.log("The value is not an object.");
 } else {
-    console.log("The value is an object.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -328,7 +348,7 @@ const value: unknown = 123;
 if (isNotString(value)) {
     console.log("The value is not a string.");
 } else {
-    console.log("The value is a string.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -344,7 +364,7 @@ const value: unknown = "symbol";
 if (isNotSymbol(value)) {
     console.log("The value is not a symbol.");
 } else {
-    console.log("The value is a symbol.");
+    console.log("The value is unknown.");
 }
 ```
 
@@ -360,7 +380,23 @@ const value: unknown = "defined";
 if (isNotUndefined(value)) {
     console.log("The value is not undefined.");
 } else {
-    console.log("The value is undefined.");
+    console.log("The value is unknown.");
+}
+```
+
+### isNotArray
+
+Checks if a value is not an `array`.
+
+```typescript
+import { isNotArray } from "type-guards-ts";
+
+const value: unknown = "not array";
+
+if (isNotArray(value)) {
+    console.log("The value is not an array.");
+} else {
+    console.log("The value is not unknown.");
 }
 ```
 
