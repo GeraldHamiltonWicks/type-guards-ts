@@ -1,6 +1,6 @@
 # Type Guards TS
 
-`type-guards-ts` is a TypeScript library providing a collection of type guard functions to help you perform runtime type checking and type narrowing. This library includes functions to check if a value is of a certain type (e.g., `isBoolean`) as well as functions to check if a value is not of a certain type (e.g., `isNotBoolean`).
+`type-guards-ts` is a TypeScript library providing a collection of type guard functions to help you perform runtime type checking and type narrowing. This library includes functions to check if a value is of a certain type (e.g., `isBoolean`) as well as functions to check if a value is not of a certain type (e.g., `isNotBoolean`)
 
 ## Index
 
