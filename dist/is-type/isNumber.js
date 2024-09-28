@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isNumber = void 0;
-function isNumber(value) {
-    return typeof value === "number";
-}
-exports.isNumber = isNumber;
+"use strict";function isNumber(e){return"number"==typeof e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isNumber=void 0,exports.isNumber=isNumber;

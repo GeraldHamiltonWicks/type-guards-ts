@@ -1,10 +1,1 @@
-export { isNotBigInt } from "./isNotBigInt";
-export { isNotBoolean } from "./isNotBoolean";
-export { isNotFunction } from "./isNotFunction";
-export { isNotNull } from "./isNotNull";
-export { isNotNumber } from "./isNotNumber";
-export { isNotObject } from "./isNotObject";
-export { isNotString } from "./isNotString";
-export { isNotSymbol } from "./isNotSymbol";
-export { isNotUndefined } from "./isNotUndefined";
-export { isNotArray } from "./isNotArray";
+export{isNotBigInt}from"./isNotBigInt";export{isNotBoolean}from"./isNotBoolean";export{isNotFunction}from"./isNotFunction";export{isNotNull}from"./isNotNull";export{isNotNumber}from"./isNotNumber";export{isNotObject}from"./isNotObject";export{isNotString}from"./isNotString";export{isNotSymbol}from"./isNotSymbol";export{isNotUndefined}from"./isNotUndefined";export{isNotArray}from"./isNotArray";

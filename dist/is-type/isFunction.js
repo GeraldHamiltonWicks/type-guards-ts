@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isFunction = void 0;
-function isFunction(value) {
-    return typeof value === "function";
-}
-exports.isFunction = isFunction;
+"use strict";function isFunction(t){return"function"==typeof t}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isFunction=void 0,exports.isFunction=isFunction;

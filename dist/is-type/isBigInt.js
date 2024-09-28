@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isBigInt = void 0;
-function isBigInt(value) {
-    return typeof value === "bigint";
-}
-exports.isBigInt = isBigInt;
+"use strict";function isBigInt(t){return"bigint"==typeof t}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isBigInt=void 0,exports.isBigInt=isBigInt;

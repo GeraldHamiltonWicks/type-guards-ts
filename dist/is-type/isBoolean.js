@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isBoolean = void 0;
-function isBoolean(value) {
-    return typeof value === "boolean";
-}
-exports.isBoolean = isBoolean;
+"use strict";function isBoolean(e){return"boolean"==typeof e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isBoolean=void 0,exports.isBoolean=isBoolean;
