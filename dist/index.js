@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isNotArray = exports.isNotUndefined = exports.isNotSymbol = exports.isNotString = exports.isNotObject = exports.isNotNumber = exports.isNotNull = exports.isNotFunction = exports.isNotBoolean = exports.isNotBigInt = exports.isArray = exports.isUndefined = exports.isSymbol = exports.isString = exports.isObject = exports.isNumber = exports.isNull = exports.isFunction = exports.isBoolean = exports.isBigInt = void 0;
+exports.isNotDate = exports.isNotArray = exports.isNotUndefined = exports.isNotSymbol = exports.isNotString = exports.isNotObject = exports.isNotNumber = exports.isNotNull = exports.isNotFunction = exports.isNotBoolean = exports.isNotBigInt = exports.isDate = exports.isArray = exports.isUndefined = exports.isSymbol = exports.isString = exports.isObject = exports.isNumber = exports.isNull = exports.isFunction = exports.isBoolean = exports.isBigInt = void 0;
 var is_type_1 = require("./is-type");
 Object.defineProperty(exports, "isBigInt", { enumerable: true, get: function () { return is_type_1.isBigInt; } });
 Object.defineProperty(exports, "isBoolean", { enumerable: true, get: function () { return is_type_1.isBoolean; } });
@@ -12,6 +12,7 @@ Object.defineProperty(exports, "isString", { enumerable: true, get: function () 
 Object.defineProperty(exports, "isSymbol", { enumerable: true, get: function () { return is_type_1.isSymbol; } });
 Object.defineProperty(exports, "isUndefined", { enumerable: true, get: function () { return is_type_1.isUndefined; } });
 Object.defineProperty(exports, "isArray", { enumerable: true, get: function () { return is_type_1.isArray; } });
+Object.defineProperty(exports, "isDate", { enumerable: true, get: function () { return is_type_1.isDate; } });
 var is_not_type_1 = require("./is-not-type");
 Object.defineProperty(exports, "isNotBigInt", { enumerable: true, get: function () { return is_not_type_1.isNotBigInt; } });
 Object.defineProperty(exports, "isNotBoolean", { enumerable: true, get: function () { return is_not_type_1.isNotBoolean; } });
@@ -23,3 +24,4 @@ Object.defineProperty(exports, "isNotString", { enumerable: true, get: function 
 Object.defineProperty(exports, "isNotSymbol", { enumerable: true, get: function () { return is_not_type_1.isNotSymbol; } });
 Object.defineProperty(exports, "isNotUndefined", { enumerable: true, get: function () { return is_not_type_1.isNotUndefined; } });
 Object.defineProperty(exports, "isNotArray", { enumerable: true, get: function () { return is_not_type_1.isNotArray; } });
+Object.defineProperty(exports, "isNotDate", { enumerable: true, get: function () { return is_not_type_1.isNotDate; } });

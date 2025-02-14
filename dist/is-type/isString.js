@@ -1,1 +1,12 @@
-"use strict";function isString(t){return"string"==typeof t}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isString=void 0,exports.isString=isString;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isString = isString;
+/**
+ * Checks whether the given value is a string.
+ *
+ * @param value - The value to be checked.
+ * @returns A boolean indicating whether the value is a string.
+ */
+function isString(value) {
+    return typeof value === "string";
+}

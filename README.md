@@ -8,26 +8,28 @@
 - [How to Use](#how-to-use)
 - [Available Type Guards](#available-type-guards)
 - [How to Use Each Type Guard](#how-to-use-each-type-guard)
-    - [isBigInt](#isbigint)
-    - [isBoolean](#isboolean)
-    - [isFunction](#isfunction)
-    - [isNull](#isnull)
-    - [isNumber](#isnumber)
-    - [isObject](#isobject)
-    - [isString](#isstring)
-    - [isSymbol](#issymbol)
-    - [isUndefined](#isundefined)
-    - [isArray](#isArray)
-    - [isNotBigInt](#isnotbigint)
-    - [isNotBoolean](#isnotboolean)
-    - [isNotFunction](#isnotfunction)
-    - [isNotNull](#isnotnull)
-    - [isNotNumber](#isnotnumber)
-    - [isNotObject](#isnotobject)
-    - [isNotString](#isnotstring)
-    - [isNotSymbol](#isnotsymbol)
-    - [isNotUndefined](#isnotundefined)
-    - [isNotArray](#isnotarray)
+  - [isBigInt](#isbigint)
+  - [isBoolean](#isboolean)
+  - [isFunction](#isfunction)
+  - [isNull](#isnull)
+  - [isNumber](#isnumber)
+  - [isObject](#isobject)
+  - [isString](#isstring)
+  - [isSymbol](#issymbol)
+  - [isUndefined](#isundefined)
+  - [isArray](#isArray)
+  - [isDate](#isDate)
+  - [isNotBigInt](#isnotbigint)
+  - [isNotBoolean](#isnotboolean)
+  - [isNotFunction](#isnotfunction)
+  - [isNotNull](#isnotnull)
+  - [isNotNumber](#isnotnumber)
+  - [isNotObject](#isnotobject)
+  - [isNotString](#isnotstring)
+  - [isNotSymbol](#isnotsymbol)
+  - [isNotUndefined](#isnotundefined)
+  - [isNotArray](#isnotarray)
+  - [isNotDate](#isDate)
 - [Future Releases](#future-releases)
 
 ## Installation
@@ -48,10 +50,10 @@ import { isBoolean } from "type-guards-ts";
 const value: unknown = true;
 
 if (isBoolean(value)) {
-    // TypeScript now knows that `value` is a boolean
-    console.log("The value is a boolean.");
+  // TypeScript now knows that `value` is a boolean
+  console.log("The value is a boolean.");
 } else {
-    console.log("The value is not a boolean.");
+  console.log("The value is not a boolean.");
 }
 ```
 
@@ -67,6 +69,7 @@ if (isBoolean(value)) {
 - `isSymbol`
 - `isUndefined`
 - `isArray`
+- `isDate`
 - `isNotBigInt`
 - `isNotBoolean`
 - `isNotFunction`
@@ -77,6 +80,7 @@ if (isBoolean(value)) {
 - `isNotSymbol`
 - `isNotUndefined`
 - `isNotArray`
+- `isNotDate`
 
 ## How to Use Each Type Guard
 
@@ -90,9 +94,9 @@ import { isBigInt } from "type-guards-ts";
 const value: unknown = BigInt(123);
 
 if (isBigInt(value)) {
-    console.log("The value is a BigInt.");
+  console.log("The value is a BigInt.");
 } else {
-    console.log("The value is not a BigInt.");
+  console.log("The value is not a BigInt.");
 }
 ```
 
@@ -106,9 +110,9 @@ import { isBoolean } from "type-guards-ts";
 const value: unknown = true;
 
 if (isBoolean(value)) {
-    console.log("The value is a boolean.");
+  console.log("The value is a boolean.");
 } else {
-    console.log("The value is not a boolean.");
+  console.log("The value is not a boolean.");
 }
 ```
 
@@ -122,9 +126,9 @@ import { isFunction } from "type-guards-ts";
 const value: unknown = () => {};
 
 if (isFunction(value)) {
-    console.log("The value is a function.");
+  console.log("The value is a function.");
 } else {
-    console.log("The value is not a function.");
+  console.log("The value is not a function.");
 }
 ```
 
@@ -138,9 +142,9 @@ import { isNull } from "type-guards-ts";
 const value: unknown = null;
 
 if (isNull(value)) {
-    console.log("The value is null.");
+  console.log("The value is null.");
 } else {
-    console.log("The value is not null.");
+  console.log("The value is not null.");
 }
 ```
 
@@ -154,9 +158,9 @@ import { isNumber } from "type-guards-ts";
 const value: unknown = 42;
 
 if (isNumber(value)) {
-    console.log("The value is a number.");
+  console.log("The value is a number.");
 } else {
-    console.log("The value is not a number.");
+  console.log("The value is not a number.");
 }
 ```
 
@@ -170,9 +174,9 @@ import { isObject } from "type-guards-ts";
 const value: unknown = { key: "value" };
 
 if (isObject(value)) {
-    console.log("The value is an object.");
+  console.log("The value is an object.");
 } else {
-    console.log("The value is not an object.");
+  console.log("The value is not an object.");
 }
 ```
 
@@ -186,9 +190,9 @@ import { isString } from "type-guards-ts";
 const value: unknown = "Hello, world!";
 
 if (isString(value)) {
-    console.log("The value is a string.");
+  console.log("The value is a string.");
 } else {
-    console.log("The value is not a string.");
+  console.log("The value is not a string.");
 }
 ```
 
@@ -202,9 +206,9 @@ import { isSymbol } from "type-guards-ts";
 const value: unknown = Symbol("symbol");
 
 if (isSymbol(value)) {
-    console.log("The value is a symbol.");
+  console.log("The value is a symbol.");
 } else {
-    console.log("The value is not a symbol.");
+  console.log("The value is not a symbol.");
 }
 ```
 
@@ -218,9 +222,9 @@ import { isUndefined } from "type-guards-ts";
 const value: unknown = undefined;
 
 if (isUndefined(value)) {
-    console.log("The value is undefined.");
+  console.log("The value is undefined.");
 } else {
-    console.log("The value is not undefined.");
+  console.log("The value is not undefined.");
 }
 ```
 
@@ -234,9 +238,33 @@ import { isArray } from "type-guards-ts";
 const value: unknown = [];
 
 if (isArray(value)) {
-    console.log("The value is an array.");
+  console.log("The value is an array.");
 } else {
-    console.log("The value is not array.");
+  console.log("The value is not array.");
+}
+```
+
+Below is an example of documentation in Markdown format that teaches how to use the `isDate` and `isNotDate` type guards.
+
+---
+
+### isDate
+
+**Description:**  
+Checks whether the provided value is a Date object.  
+This function verifies if the given value is a Date by first checking whether it is an instance of Date. It also uses `Object.prototype.toString` to handle cases where the Date object might come from a different execution context.
+
+**Usage Example:**
+
+```typescript
+import { isDate } from "type-guards-ts";
+
+const value: unknown = new Date();
+
+if (isDate(value)) {
+  console.log("The value is a Date:", value);
+} else {
+  console.log("The value is not a Date.");
 }
 ```
 
@@ -250,9 +278,9 @@ import { isNotBigInt } from "type-guards-ts";
 const value: unknown = 123;
 
 if (isNotBigInt(value)) {
-    console.log("The value is not a BigInt.");
+  console.log("The value is not a BigInt.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -266,9 +294,9 @@ import { isNotBoolean } from "type-guards-ts";
 const value: unknown = "true";
 
 if (isNotBoolean(value)) {
-    console.log("The value is not a boolean.");
+  console.log("The value is not a boolean.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -282,9 +310,9 @@ import { isNotFunction } from "type-guards-ts";
 const value: unknown = "function";
 
 if (isNotFunction(value)) {
-    console.log("The value is not a function.");
+  console.log("The value is not a function.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -298,9 +326,9 @@ import { isNotNull } from "type-guards-ts";
 const value: unknown = "not null";
 
 if (isNotNull(value)) {
-    console.log("The value is not null.");
+  console.log("The value is not null.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -314,9 +342,9 @@ import { isNotNumber } from "type-guards-ts";
 const value: unknown = "42";
 
 if (isNotNumber(value)) {
-    console.log("The value is not a number.");
+  console.log("The value is not a number.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -330,9 +358,9 @@ import { isNotObject } from "type-guards-ts";
 const value: unknown = "object";
 
 if (isNotObject(value)) {
-    console.log("The value is not an object.");
+  console.log("The value is not an object.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -346,9 +374,9 @@ import { isNotString } from "type-guards-ts";
 const value: unknown = 123;
 
 if (isNotString(value)) {
-    console.log("The value is not a string.");
+  console.log("The value is not a string.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -362,9 +390,9 @@ import { isNotSymbol } from "type-guards-ts";
 const value: unknown = "symbol";
 
 if (isNotSymbol(value)) {
-    console.log("The value is not a symbol.");
+  console.log("The value is not a symbol.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -378,9 +406,9 @@ import { isNotUndefined } from "type-guards-ts";
 const value: unknown = "defined";
 
 if (isNotUndefined(value)) {
-    console.log("The value is not undefined.");
+  console.log("The value is not undefined.");
 } else {
-    console.log("The value is unknown.");
+  console.log("The value is unknown.");
 }
 ```
 
@@ -394,12 +422,31 @@ import { isNotArray } from "type-guards-ts";
 const value: unknown = "not array";
 
 if (isNotArray(value)) {
-    console.log("The value is not an array.");
+  console.log("The value is not an array.");
 } else {
-    console.log("The value is not unknown.");
+  console.log("The value is not unknown.");
 }
 ```
 
+### isNotDate
+
+**Description:**  
+Determines if the provided value is not a Date object.  
+This type guard leverages the `isDate` helper function to check if a value is not a Date. If the value is not a Date, the function returns true and narrows the type accordingly.
+
+**Usage Example:**
+
+```typescript
+import { isNotDate } from "type-guards-ts";
+
+const value: unknown = "2023-08-24"; // Example value that is not a Date
+
+if (isNotDate(value)) {
+  console.log("The value is not a Date:", value);
+} else {
+  console.log("The value is a Date.");
+}
+```
 
 ## Future Releases
 

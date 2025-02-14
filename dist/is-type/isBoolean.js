@@ -1,1 +1,12 @@
-"use strict";function isBoolean(e){return"boolean"==typeof e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.isBoolean=void 0,exports.isBoolean=isBoolean;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isBoolean = isBoolean;
+/**
+ * Checks whether the given value is of type `boolean`.
+ *
+ * @param value - The value to be checked.
+ * @returns A boolean indicating whether the value is a `boolean`.
+ */
+function isBoolean(value) {
+    return typeof value === "boolean";
+}

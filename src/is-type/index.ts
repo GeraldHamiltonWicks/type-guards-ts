@@ -8,3 +8,4 @@ export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
 export { isArray } from "./isArray";
+export { isDate } from "./isDate";
